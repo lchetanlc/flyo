@@ -15,17 +15,17 @@
 
         .nav-tags {}
 
-        ul {
+        .nav-tags ul {
             list-style: none;
             display: flex;
             gap: 60px;
-            font-size: 20px;
+            font-size: 25px;
 
         }
 
         .navigation {
             display: grid;
-            grid-template-columns: 2.7fr 1fr;
+            grid-template-columns: 2.6fr 1fr;
             background-color: hsl(218, 28%, 13%);
         }
 
@@ -118,6 +118,62 @@
             justify-content: center;
             gap: 20px;
             padding: 5pc;
+        }
+
+
+
+
+
+
+
+
+        @media (max-width:700px)
+        {
+           .navigation{
+               display: flex;
+               flex-direction: column;
+               
+               align-items: center;
+           }
+           .middle-image img{
+               height: 400px;
+               width: 350px;
+           }
+           .all-cards{
+               display: flex;
+               flex-direction: column;
+             
+           }
+           .card{
+               width: 200px;
+               line-height: 1.5;
+              
+           }
+           .nesst-two-cards{
+               margin-top: -200px;
+           }
+           .bottom-page{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+           }
+           .text{
+               width: 300px;
+               text-align: center;
+           }
+           .bottom-page img{
+               width: 400px;
+               height: 400px;
+           }
+           .reviews{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+           }
+
+
         }
     </style>
 </head>
